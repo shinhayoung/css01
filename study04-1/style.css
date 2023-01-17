@@ -1,0 +1,74 @@
+/*css reset*/
+body, ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+/*layout*/
+.wrapper {
+  width: 650px;
+  margin: 100px auto;
+}
+
+/*design*/
+body {
+  background-color: #e8967a;
+}
+
+.balloon {
+  background-color: #fff;
+  padding: 35px;
+  border-radius: 90px;
+  position: relative;
+}
+
+.balloon::after {
+  content: " ";
+  border-top: 40px solid #fff;
+  border-right: 40px solid transparent;
+  border-left: 40px solid transparent;
+  border-bottom: 0 solid transparent;
+  position: absolute;
+  top: 150px;
+  left: 285px;
+}
+
+.balloon .star {
+  width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.balloon .star li {
+  background-image: url(images/star.png);
+  width: 96px;
+  height: 96px;
+  text-indent: -9999px;
+  flex-grow: 1;
+}
+
+.balloon .star li.half {
+  width: 47px;
+}
+
+.balloon .star li.full {
+  background-position: 0 bottom;
+}
+
+.balloon .star li.left {
+  background-position: 99px bottom;
+}
+
+.balloon .star li.right {
+  background-position: 47px top;
+}
+
+.balloon .star li.empty {
+  background-position: 0 0;
+}
+

@@ -1,0 +1,165 @@
+/* css reset */
+body, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+h2, h3 {
+  margin: 0; 
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  vertical-align: top;
+}
+
+li {
+  list-style-type: none;
+}
+
+
+/* layout */
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+}
+
+/* design */
+body {
+  background-color: #000;
+}
+
+.header {
+  background-color: #111;
+  color: #999;
+} 
+
+.header_rescue {
+  height: 150px;
+  display: flex;
+  align-items: center;
+}
+
+.header_rescue .logo {
+  width: 200px;
+}
+
+.header_rescue .logo>img {
+  width: 100%;
+}
+
+.header_rescue p {
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+}
+
+.header_rescue p::before {
+  content: "";
+  border-top: 1px solid;
+  margin: 0 20px;
+  width: 4em;
+}
+
+.header_rescue .anger {
+  width: 100px;
+  margin-left: auto;
+  margin-top: auto;
+}
+
+.contents {
+  color: #999;
+  padding: 30px;
+}
+
+.contents_box {
+  display: flex;
+}
+
+.sidebar {
+  width: 200px;
+  margin-right: 30px;
+  flex-shrink: 0;
+}
+
+.sidebar h2 {
+  background-image: url(images/icon.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-indent: 30px;
+  margin-bottom: 10px;
+}
+
+.sidebar .menu {
+  padding: 10px 0;
+  border-top: 1px solid salmon;
+}
+
+.sidebar .menu h3 {
+  color: salmon;
+}
+
+.sidebar .menu_list {
+  padding: 10px 0 0 10px;
+}
+
+.sidebar .menu_list li {
+  padding: 5px 0;
+  border-top: 1px solid;
+}
+
+.sidebar .menu_list li.first_list {
+  border: none;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.grid li {
+  width: 230px;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #222;
+  margin: 0 0 20px;
+}
+
+.grid li img {
+  width: 100%;
+}
+
+.grid li h2 {
+  color: pink;
+  padding: 15px;
+  font-size: 12px;
+}
+
+.grid li p {
+  padding: 0 15px 15px 15px;
+  font-size: 10px;
+}
+
+.grid li a {
+  display: block;
+  background-color: #111;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  font-size: 10px;
+  color: red;
+  border-radius: 5px;
+  letter-spacing: 2px;
+}
+

@@ -1,0 +1,132 @@
+/*css reset*/
+body, p {
+  margin: 0;
+}
+
+h1, h2 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*rayout*/
+.wrapper {
+  width: 600px;
+  margin: 0 auto;
+}
+
+
+/*design*/
+body {
+  background-color: #ccc;
+  font-family: 'Raleway', sans-serif;
+}
+
+.header {
+  background-image: url(images/insideout-bg.png);
+  background-position: center;
+  color: #fff;
+  padding: 70px 0;
+}
+
+.header h1 {
+  font-size: 70px;
+  font-weight: 900;
+  background-color: red;
+  text-align: center;
+}
+
+.contents {
+  background-color: rgb(235, 235, 235);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+  gap: 20px;
+}
+
+.grid {
+  background-color: #fff;
+  text-align: right;
+  padding: 30px;
+  position: relative;
+  border-radius: 5px;
+}
+
+.grid h2 {
+  color: orange;
+  font-weight: 900;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.grid h2::after {
+  content: " ";
+  width: 100%;
+  height: 5px;
+  background-color: salmon;
+  display: block;
+  border-radius: 20px;
+}
+
+.grid .grid_text {
+  display: flex;
+  justify-content: end;
+  font-size: 10px;
+  font-weight: 400;
+  color: #888;
+  gap: 40px;
+  margin-top: 15px;
+}
+
+.grid .grid_text p {
+  width: 180px;
+}
+
+.grid .grid_cover {
+  width: 130px;
+}
+
+.grid.joy .grid_cover {
+  position: absolute;
+  top: 0;
+  left: 10px;
+}
+
+.grid.sad {
+  text-align: left;
+}
+
+.grid.sad .grid_text{
+  justify-content: start;
+}
+
+.grid.sad h2 {
+  color: dodgerblue;
+}
+
+.grid.sad h2::after {
+  background-color: skyblue;
+}
+
+.grid.sad .grid_cover {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+}
+
+.grid.anger h2 {
+  color: orangered;
+}
+
+.grid.anger h2::after {
+  background-color: gold;
+}
+
+.grid.anger .grid_cover {
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+}

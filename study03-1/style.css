@@ -1,0 +1,123 @@
+/*css reset*/
+body, p, ul{
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2{
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*layouts*/
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+}
+
+/*design*/
+.header {
+  background-image: url(images/header-bg.png);
+  color: orange;
+  padding-top: 100px;
+}
+
+.header .oak { 
+  border-width: 30px 30px 0 30px;
+  border-style: solid; 
+  padding: 50px;
+  background-image: url(images/container-bg.png);
+  background-repeat: no-repeat;
+  background-position: right 40px top 50px; 
+}
+
+.header .oak h1 {
+  display: inline-block;/*텍스트의 길이만큼 width가 지정되어지는 inline의 특징을 가지고 있기 때문에 텍스트의 길이만큼 디자인이 들어갈 수 있도록 inline-block을 써준다
+  width: fit-content; 이렇게 줄 수 있지만 아직 호환성 문제가 있기 때문에 쓰는것을 지향한다 */
+  font-size: 32px;
+  border-bottom: 4px solid;
+  letter-spacing: 12px;
+}
+
+.header .oak h1 span {
+  font-weight: bolder;
+}
+
+.header .oak p {
+  padding: 55px 0 0 0;
+  font-size: 16px;
+  line-height: 26px;
+  margin-right: 240px;
+}
+
+.contents {
+  background-color: #ddd;
+  padding: 30px 0;
+}
+
+.contents .grid {
+  text-align: center;
+  color: orange;
+  font-size: 0;/*inline 요소에 한칸 띄어쓰기가 되어서 공간이 남는것을 없에주는 방법*/
+}
+
+.contents .grid li{
+  display: inline-block;
+  /*제일 좋은 방법은 flex를 이용하는것*/
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.contents .grid li.center {
+  margin: 0 30px;
+}
+
+.box {
+  display: block;
+  /*a는 inline 요소이기 때문에 전체 클릭이 되는 영역이 될 경우에는 반드시 display: block을 해줘야만 한다*/
+}
+
+.box h2 {
+  background-color: #fff;
+  padding: 15px;
+  border-top: 3px solid;
+  font-size: 13px;
+  font-weight: bolder;
+  text-align: left;
+  background-image: url(images/play.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.footer {
+  color: lightgray;
+  border-top: 2px solid;
+  padding: 22px 0 88px;
+  text-align: center;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 13px;
+}
+
+
+
+
+
+
+
+
+

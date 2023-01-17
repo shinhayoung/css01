@@ -1,0 +1,87 @@
+/* css reset*/
+body, p, ul{
+  margin: 0; /* 0 = margin: initial*/
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+img {
+  vertical-align: top;
+
+}
+h1, h2 {
+  margin: 0;
+  font-size: inherit;  
+  font-weight: inherit;
+  /*font-size, font-weight등을 초기화할 때 상속을 받으려면 inherit을 쓰고 상속을 안받을 때는 initial을 쓴다*/
+}
+
+/*design*/
+body {
+  background-color: #999;
+}
+
+.wrapper {
+  background-color: #ddd;
+  width: 800px;
+  margin: 50px auto;
+}
+
+.header {
+  background-size: cover;
+  /*이미지 사이즈를 100%로 맞추면서 비율도 똑같이 하고싶을 때 cover를 쓴다 */
+  background-position: center;
+  background-image: url(images/cover04.png);
+  text-align: center;
+  padding: 100px 0;
+  color: white;
+}
+/*.header 앞에 아무것도 안쓸때는 *가 생략되어있는것
+* = universial sellector*/
+
+.header .picture {
+  border-radius: 50%;
+  border: 10px solid;
+}
+
+.header h1 {
+  font-size: 60px;
+  padding: 10px 0;
+}
+
+.section {
+  background-image: url(images/icon-information.png);
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  /*오른쪽 20px만큼 떨어뜨리는 뜻*/
+  background-color: #fff;
+  margin: 20px;
+  /*상하 margin이 겹치면 값이 큰 margin으로 설정이 된다 margin 병합현상*/
+  padding: 20px;
+}
+
+.section h2 {
+  color: salmon;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.section.skills {
+  background-image: url(images/icon-skills.png);
+}
+
+.list li {
+  border-left: 5px solid #f4f4f4;
+  padding: 4px 0 4px 10px;
+}
+
+.list li:hover { 
+  border-color: deeppink;
+  color: deeppink;
+}
+.footer {
+  background-color: #f4f4f4;
+}

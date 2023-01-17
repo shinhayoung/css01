@@ -1,0 +1,61 @@
+/*css reset*/
+body, h1, ul {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+/*design*/
+body {
+  background-color: #ddd;
+}
+
+div.wrapper {
+  background-color: #fff;
+  width: 540px;
+  margin: 100px auto;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 5px 5px 5px lightgray; 
+}
+
+div.header {
+  padding: 30px 0;
+}
+
+.header h1 { 
+  padding-left: 20px;
+  color: hotpink;
+  font-size: 25px;
+  font-weight: bolder;
+  border-left: 8px solid;
+}
+
+.bucketlist {
+  background-color: rgb(245, 245, 245);
+  padding: 10px;
+  border-top: 4px solid rgb(235, 235, 235);
+}
+
+.bucketlist li {
+  background-color: #fff;
+  margin: 16px;
+  padding: 10px;
+  color: gray;
+  font-weight: 500;
+  border: 4px solid rgb(235, 235, 235);
+  border-radius: 10px; 
+}
+
+.bucketlist li:nth-child(2){
+  color: rgb(24, 150, 253);
+  border-color: rgb(24, 150, 253);
+}

@@ -1,0 +1,94 @@
+/*css reset*/
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+h1, p {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: 0.8;
+}
+/*design*/
+
+.wrapper {
+  width: 900px;
+  margin: 20px auto;
+  border: 1px solid #ad3836;
+}
+
+.header {
+  padding: 20px;
+  border-bottom: 2px solid lightgrey;
+}
+
+.header a {
+  color: #ad3836;
+  font-weight: 500;
+  padding-right: 32px;
+  font-size: 15px;
+}
+
+.header a:hover {
+  text-decoration: underline;
+}
+
+.contents {
+  width: 740px;
+  margin: 0 auto;
+}
+
+.contents .brandname {
+  color: #01083a;
+  padding: 80px 0;
+  border-bottom: 1px solid lightgrey;
+}
+
+.contents .brandname:last-child {
+  border: none;
+}
+
+.contents .brandname p {
+  font-size: 14px;
+  font-weight: bolder;
+  margin-bottom: 23px;
+}
+
+.contents .brandname:hover a {
+  color: #e7007d;
+}
+
+.contents .brandname h1 {
+  font-size: 90px;
+  font-weight: bolder;
+}
+
+.contents .brandname:hover {
+  background-repeat: no-repeat;
+  background-size: 200px 200px;
+  background-position: right 20px center;
+}
+
+.contents .nike:hover {
+  background-image: url(images/nike.jpeg);
+}
+
+.contents .adidas:hover {
+  background-image: url(images/adidas.jpeg);
+}
+
+.contents .converse:hover {
+  background-image: url(images/converse.png);
+}
+
+.contents .newbalance:hover {
+  background-image: url(images/newbalance.png);
+}
+

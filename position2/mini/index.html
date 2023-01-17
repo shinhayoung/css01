@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+
+	<div class="section">
+		<div class="wrapper">
+			<h1 class="title">
+				START YOUR
+				DIGITAL
+				TRANSFORMATION
+				JOURNEY
+			</h1>
+		</div>
+	</div>
+  relative
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	= inset: 0;
+	부모크기만큼의 사용할 수 있는 공간이 생긴다
+
+	z-index를 쓰려면 position이 설정되어 있어야 가능하다
+	뒤에 있는 마크업이 앞으로 올 수 있게 만드는 방법
+	1.position: relative;
+	2.transform: translate()
+	3.opacity: 0.9;
+	등등
+	쌓임맥락 읽어보기
+
+	글자의 크기만큼 글자 아래의 줄을 만드는 방법
+	1.
+	width: fit-content;
+	content 크기만큼 width가 지정된다
+  (호환성 문제가 있음)
+	2.
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+
+	앞에 있는 아래의 줄을 뒤로 보내는 방법
+  자식한테 z-index: -1을 설정하고 부모에게 z-index: 1을 설정하면 된다
+	자식에게만 설정하면 전체기준에서 설정이 되기때문에 기준이 되어야하는 곳에 z-index를 줘야한다
+
+  별점 만들 때 사용할 것
+	가상요소
+	transform
+	translate
+	</body>
+</html>
+
+
